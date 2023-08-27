@@ -1,0 +1,120 @@
+Data Structure
+
+# Introduction
+
+1. Definition
+Data Structure is a way to store and originize data in a computer, so it can be used efficiently
+
+2. Variety
+
+(1) List - Abstact data types
+
+(2) Arrays - Concrete Implementation
+
+
+# Array and Linked list
+
+1. Arrays
+
+(1) Cost of accessing an element
+-> Constant time-O(1)
+
+(2) Memory requirements
+-> Fixed size
+-> Memory may not be avaliable as one large block
+-> May generate some unused memory
+
+(3) Cost of inserting an element
+-> At beginning: O(n)
+-> At end: 1 Full => O(n); Not full => O(1)
+-> At i position: O(n)
+
+
+2. Linked list
+
+(1) Cost of accessing an element
+-> Average case-O(n)
+
+(2) Memory requirements
+-> No unused memory 
+-> Extra memory for pointers variables
+-> Memory may available as multiple small blocks
+
+(3) Cost of inserting an element
+-> At beginning: O(1)
+-> At end: O(n)
+-> At i position: O(n)
+
+(4) Define linked list in C
+eg.
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+3. Doubly linked list
+
+(1) Properties
+-> Have two links - one is next node and the other one is previous node
+
+(2) Define doubly linked list
+eg.
+struct Node {
+    int data;
+    struct Node* next;
+    struct Node* prev;
+};
+
+# Stacks (Last-In-First-Out collection)
+
+1. Definition
+A list with the restriction that insertion and deletion can be performed only from one end, called the top of tack
+
+2. Operations
+
+(1) Push() - insert or push some items on to the stack
+(2) Pop() - removing most recent items from the stack
+(3) Top() - return the top of the stack
+(4) IsEmpty - return true if the stack is emppty, false the otherwise
+// If the top is -1 => the stack is empty
+
+# Infix, Posfix, Prefix
+
+1. Infix
+<operand1> <operator> <operand2>
+eg.
+2 + 3
+
+2. Prefix
+<operator> <operand1> <operand2>
+eg.
++2 3
+// Scan from right
+
+3. Postfix
+<operand1> <operand> <operator2>
+eg.
+2 3+
+// Scan from left
+
+4. Order of operation
+
+(1) Parentheses () -> {} -> []
+(2) Exponents -> right to left
+(3) Multiplication and division
+(4) Addition and Subtraction
+
+# Queues (First-In-First-Out collection)
+
+1. Definition
+A list or collection with the restriction that insertion can be performed at one end (rear) and deletion can be performed at other end (front)
+
+2. Operations
+
+(1) EnQueue(x) - Insert an element to the queue // Insert the rear side(right)
+(2) DeQueue() - Return the removed element from the head of the queue // Remove the front side(left)
+(3) font() - Return the element that at the head of the queue
+(4) IsEmpty() - Return true if the queue is emppty, false the otherwise
+// The head of the queue is on the right side
+
+
