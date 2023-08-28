@@ -117,4 +117,73 @@ A list or collection with the restriction that insertion can be performed at one
 (4) IsEmpty() - Return true if the queue is emppty, false the otherwise
 // The head of the queue is on the right side
 
+# Trees (Hierarchical data structure / Recursive data structure)
+
+1. The nounce of the trees
+
+(1) A collection of entities called "Nodes" link together hierarchies
+
+(2) The top node in the tree called "Root"
+
+(3) Some nodes may contain links or references to some other nodes that can be called its "Children"
+
+(4) Some nodes' data which stored by the children called "Parents"
+
+(5) If the children have the same parents called sibling
+
+(6) Some nodes which do not have the children called "Leaf"
+
+2. Properties
+
+(1) If the tree has N nodes, and it has N-1 edges(links)
+
+(2) Depth - Depth of x => Length of path from root to x
+
+(3) Height - Height of x => Number of edges in "Longest" path from x to leaf
+
+3. Binary trees
+
+(1) Definition
+A tree in which each node can have at most 2 children
+
+(2) Example
+{1} The structure of the tree
+[a][b][c]
+a: Store the address of the "left" child
+b: Store the data
+c: Store the address of the "right" child
+
+{2} Code of the binary tree
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
+};
+
+(3) The kind of the binary tree
+
+{1} Strict(Proper) binary tree:
+Each node can have either 2 or 0 children
+
+{2} Complete binary tree:
+All levels except possibly the last are completely filled and all nodes are as left as possible
+
+{3} Balanced binary tree:
+Difference between height of left and right subtree for every node is not more than k (mostly 1)
+// Height of an empty tree = -1 => Height of tree with 1 node = 0 
+
+(4) The formula of the tree
+{1} Max number of nodes at level i => 2**i
+
+{2} Max number of nodes in a binary tree with height h => 2**(h+1) - 1
+
+{3} Height of perfect binary tree with n nodes => log2(n+1) - 1
+
+{4} For node at index i
+=> Left-child-index = 2i+1
+=> Right-child-index = 2i+2
+
+
+
+
 
