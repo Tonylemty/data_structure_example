@@ -117,6 +117,7 @@ A list or collection with the restriction that insertion can be performed at one
 (4) IsEmpty() - Return true if the queue is emppty, false the otherwise
 // The head of the queue is on the right side
 
+
 # Trees (Hierarchical data structure / Recursive data structure)
 
 1. The nounce of the trees
@@ -170,7 +171,11 @@ All levels except possibly the last are completely filled and all nodes are as l
 
 {3} Balanced binary tree:
 Difference between height of left and right subtree for every node is not more than k (mostly 1)
-// Height of an empty tree = -1 => Height of tree with 1 node = 0 
+// Height of an empty tree = -1 => Height of tree with 1 node = 0
+
+{4} Binary search tree:
+A binary tree in which for each node, value of all the nodes in "left" subtree is "lesser" or "equal" and value of all the nodes in "right" subtree is "greater"
+
 
 (4) The formula of the tree
 {1} Max number of nodes at level i => 2**i
