@@ -19,7 +19,6 @@ struct BstNode* GetNewNode(int data) {
 struct BstNode* Insert(struct BstNode* root, int data) {
     if (root == NULL) {
         root = GetNewNode(data);
-        return root;
     }
     else if (data <= root->data) {
         root->left = Insert(root->left, data);
