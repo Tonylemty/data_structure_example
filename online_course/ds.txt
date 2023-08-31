@@ -188,7 +188,20 @@ A binary tree in which for each node, value of all the nodes in "left" subtree i
 => Left-child-index = 2i+1
 => Right-child-index = 2i+2
 
+4. Binary tree traversat
 
+(1) Definition
+Process of visiting each node in the tree exactly once in some order
 
+(2) The kind of the binary tree traversat
+
+{1} Breadth-first 
+-> level-order(level by level and left to right)
+
+{2} Depth-first
+<root> <left-subtree> <right-subtree> -> preorder(DLR)
+<left-subtree> <root> <right-subtree> -> inorder(LDR)
+<left-subtree> <right-subtree> <root> -> postorder(LRD)
+// root -> D; left-subtree -> L; right-subtree -> R
 
 
