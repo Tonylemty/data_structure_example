@@ -204,4 +204,101 @@ Process of visiting each node in the tree exactly once in some order
 <left-subtree> <right-subtree> <root> -> postorder(LRD)
 // root -> D; left-subtree -> L; right-subtree -> R
 
+5. Delete a node from BST
+
+(1) case 1: No child
+
+(2) case 2: one child
+
+(3) case 3: 2 children
+{way 1} 
+Find minimum in right copy the value in targetted node delete duplicate from right-subtree
+
+{way 2}
+Find maximum in left copy the value in targetted node delete duplicate from left-subtree
+
+6. Successor in a BST
+
+(1) Inorder
+
+{1} case 1: Node has right subtree
+Go deep to leftmost node in right subtree or find minimum in right subtree
+
+{2} case 2: No right subtree
+Go to the nearest ancestor for which given node would be in left subtree
+
+# Graphs
+
+1. Definition
+A graph "G" is an ordered pair of a set "V" of vertices and a set "E" of edges
+-> G = (V, E)
+
+2. Properties of graphs
+
+(1) Edges
+{1} Self-loop
+
+{2} Multiedge
+
+{3} Simple edges
+number of edges
+if |V| = n, then 
+0 <= |E| <= n(n - 1), if directed
+0 <= |E| <= n(n - 1)/2, if undirected
+Dense -> too many edges
+Sparse -> too few edges
+
+(2) Path
+
+{1} Definition
+A sequence of vertices where each adjacent pair is connected by an edge
+
+{2} Simple path 
+A path in which no vertices (and thus no edges) are repeated
+
+examples: <A, B, F, H>
+
+
+(3) Walk
+
+{1} Definition
+A sequence of vertices where each adjacent pair is connected by an edge
+
+{2} Example
+<A, B, F, H, E, B, A, D>
+
+
+
+
+Example
+<A, B, F, H>
+
+(4) Strongly connected Graphs
+If there is a path from any vertex to any other vertex
+
+(5) Closed walk
+Starts and ends at same vertex
+
+(6) Simple cycle
+No repetition other than start and end
+
+(7) Acyclic Graph
+A graph with no cycle
+
+
+
+3. Introduction of edges
+
+(1) Directed 
+u to v -> (u, v) => one way// u is origin and v is destanation
+
+(2) Undirected 
+u to v -> {u, v} => two way
+
+
+
+
+
+
+
 
